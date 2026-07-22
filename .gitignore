@@ -1,44 +1,48 @@
-# History files
+# Quarto output directories
+/.quarto/
+**/*.quarto_ipynb
+
+# R-specific
 .Rhistory
-.Rapp.history
-# Session Data files
 .RData
-# User-specific files
-.Ruserdata
-# macOS files
-.DS_store
-# Example code in package build process
-*-Ex.R
-# Output files from R CMD build
-/*.tar.gz
-# Output files from R CMD check
-/*.Rcheck/
-# RStudio files
 .Rproj.user/
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-# Temporary files created by Word
-~$*
-# R Environment Variables
-.Renviron
-# HTML files
-*.html
-# Zip
+.Ruserdata
+*.Rproj
+*-Ex.R
+
+# renv (uncomment if not tracking renv lockfile)
+# renv/library/
+# renv/staging/
+renv/sandbox/
+
+# R package build artifacts
+*.tar.gz
 *.zip
-# All spatial data
-Spatial/
-# All results
-Results/
-# Manuscript drafts
-Documents/Revisions/
-# Documents for submission
-Documents/Submission
+
+# knitr / rmarkdown cache
+*_cache/
+*_files/
+/cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+*.swp
+*~aa
+
+# Data files are too big
+/Data
+
+# Examples
+/SupportingDocs/Examples
+
+# VegClass
+/Scripts/VegClass_update
+
+# README files that are rendered as pdfs
+README*.pdf
+

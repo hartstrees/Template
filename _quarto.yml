@@ -1,0 +1,56 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Title"
+  author: "Author"
+  date: "Date"
+  chapters:
+    - index.qmd
+    - references.qmd
+  appendices:
+  
+bibliography: references.bib
+csl: forest-ecology-and-management.csl
+
+execute:
+  freeze: auto
+  prefer-html: true
+  echo: false
+  cache: false
+  
+format:
+  pdf:
+    documentclass: scrreprt
+    include-in-header:
+      text: |
+        \usepackage{float}
+        \floatplacement{table}{H}
+
+  docx:
+    reference-doc: custom-reference-doc.docx
+    toc: true
+    number-sections: true
+    keep-md: false
+    syntax-highlighting: github
+
+        
+  html:
+    execute:
+      echo: true
+    embed-resources: false
+    code-fold: true
+    code-copy: true
+    theme:
+      - cosmo
+      - brand
+    language:
+      callout-tip-title: "Technical details"
+
+editor: visual
+tbl-colwidths: auto
+
+knitr:
+  opts_chunk:
+    tidy: "styler"

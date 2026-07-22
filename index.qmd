@@ -1,0 +1,9 @@
+# Overview
+
+The Forest Vegetation Simulator (FVS) is an inventory-based growth and yield modeling system [@dixon2002EssentialFVSUsers]. FVS is an individual tree, semi-distance-independent, growth and yield model primarily developed and maintained by the USDA Forest Service. While FVS models individual trees within stands, it can be used to inform analyses at broader scales [@crookston2005ForestVegetationSimulator].
+
+FVS is based on empirical relationships derived from standard forest inventory data. Different equations have been developed for different geographic areas. For the BKNF, the Central Rockies variant (CR-FVS) was used. Within each variant, different model types exists to better capture local differences. This effort uses the Black Hills Ponderosa Pine model, which is capable of modeling all species in the BKNF.
+
+A description of the FVS can be found in Dixon [@dixon2002EssentialFVSUsers]. The CR variant is described in FVS Staff [-@fvsstaff2025].
+
+The stratification, data inputs, and FVS calibration broadly follow methods used by Shettles [-@shettles2024] for the BKNF Natural Range of Variability effort. The silvicultural prescriptions were adapted from Vandendriesche [-@vandendriesche2004Construction] by Barnes [-@barnes2025Silvicultural].
